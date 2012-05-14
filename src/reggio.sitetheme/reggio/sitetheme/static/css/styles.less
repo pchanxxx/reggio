@@ -407,10 +407,10 @@ html, body {
     display: inline-block;
     height: 40px;
 } 
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a.contenttype-plone-site {
+/*#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a.contenttype-plone-site {
     color: #fff;
     margin-top: 10px;
-}
+} */
 #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div {
     width: 205px;
     height: 40px;
@@ -420,18 +420,20 @@ html, body {
     font-size: 120%;   
 }
 
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a:hover {
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a {
+    background:none;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-left: 15px;
     color: #fff;
 }
 
-
-.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div {
-    width: 205px;
-    height: 40px;
-    padding-top: 7px;
-    text-align: center; 
-    background-color: #45a12a; 
-
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a:hover {
+    background:none;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-left: 15px;
+    color: #fff;
 }
 
 #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem {
@@ -441,9 +443,13 @@ html, body {
     font-size: 90%;
     padding-top:10px;
     margin-top: 10px;
+    width:205px;
+}
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem span {
+     color: #999999;   
 }
 
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem span {
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published {
     background: url(../images/circle_grey.png) no-repeat 0px 5px transparent;
     display: inline-block;
     margin-left: 20px;
@@ -451,45 +457,123 @@ html, body {
     width: 210px;
     color: #999999;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published .navTreeCurrentNode{
-    background: url(../images/circle_kk.png) no-repeat 0px 5px transparent;
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:visited{
+    color: #999999;    
+}
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeCurrentNode a.state-published {
+    background: url(../images/circle_kg.png) no-repeat 0px 5px transparent;
     display: inline-block;
     margin-left: 20px;
     padding-left: 15px;
     width: 210px;
     color: #009ee0;
 }
-
-/*.navTreeCurrentNode span{
-    background: #fff;
-    padding: 10px 10px 10px 20px;
-    margin-top: 5px;
-    display:block;
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeCurrentNode span {
+    color: #009ee0;    
+}
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:hover {
+    background: url(../images/circle_kg.png) no-repeat 0px 5px transparent;
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 15px;
+    width: 210px;
+    color:  #009ee0;
+}
+#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:hover span{
+    color:  #009ee0;
 }
 
-.navTreeCurrentItem span{
-    background: #933389; 
-    margin-top: 3px;
-    padding: 10px 10px 10px 20px;
+#navigation .selected a,
+#navigation a:hover {
+    padding: 10px 15px 10px 15px;
+}
+
+.section-kinderkrippe #sidebar-left .portletNavigationTree {
+    padding-top: 20px;
+}
+
+.section-kinderkrippe .navTreeItem{
+    background: #45a12a;
+    font-size: 110%;
+    display: inline-block;
+    height: 40px;
+} 
+/*#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a.contenttype-plone-site {
+    color: #fff;
+    margin-top: 10px;
+} */
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div {
+    width: 205px;
+    height: 40px;
+    padding-top: 7px;
+    text-align: center; 
+    background-color: #45a12a;  
+    font-size: 120%;   
+}
+
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a {
+    background:none;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-left: 15px;
     color: #fff;
 }
 
-.navTreeLevel1 span{
-    background: url(../images/circle_yellow.png) 15px 11px no-repeat transparent;
-    background-color: #fff;
-    margin-top: 3px;
-    padding: 10px 10px 10px 40px;     
-    display:block;  
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a:hover {
+    background:none;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-left: 15px;
+    color: #fff;
 }
 
-.navTreeLevel1 .navTreeCurrentNode span {
-    background: url(../images/circle_lila.png) 15px 11px no-repeat transparent;
-    color: #933389;
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem {
+    border-bottom: 2px solid #d7d7d7;
     background-color: #fff;
-    padding-left: 40px;
-} */
+    color: #999999;
+    font-size: 90%;
+    padding-top:10px;
+    margin-top: 10px;
+    width: 205px;
+}
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem span {
+     color: #999999;   
+}
 
-#sidebar-right .portletNews {
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published {
+    background: url(../images/circle_grey.png) no-repeat 0px 5px transparent;
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 15px;
+    width: 210px;
+    color: #999999;
+}
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:visited{
+    color: #999999;    
+}
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeCurrentNode a.state-published {
+    background: url(../images/circle_kk.png) no-repeat 0px 5px transparent;
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 15px;
+    width: 210px;
+    color: #45a12a;
+}
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeCurrentNode span {
+    color: #45a12a;    
+}
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:hover {
+    background: url(../images/circle_kk.png) no-repeat 0px 5px transparent;
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 15px;
+    width: 210px;
+    color:  #45a12a;
+}
+.section-kinderkrippe #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:hover span{
+    color: #45a12a;
+}
+.section-kinderkrippe #sidebar-right .portletNews {
     margin-top: 20px;
 }
 #sidebar-right dl.portletNews p,
@@ -826,18 +910,18 @@ dl.portlet {
 }
 
 #content a:link,
-dl.portlet a:link {
+dl.portletEvents a:link {
     color: #45a12a;
  /*   border-bottom: 0.1em solid #ccc; */
 }
 
 #content a:visited,
-dl.portlet a:visited {
+dl.portletEvents a:visited {
     color: #45a12a;
     border-bottom: 0.1em solid #ccc;
 }
 #content a:hover,
-dl.portlet a:hover {
+dl.portletEvents a:hover {
     color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
 #content a:target {
