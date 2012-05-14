@@ -36,10 +36,6 @@
            tal:attributes="href obj/getURL;
                            title obj/Description">
             <img tal:replace="structure item_icon/html_tag" />
-            <span tal:replace="obj/pretty_title_or_id">
-             Some Event
-            </span>
-        </a>
             <span class="portletItemDetails">
                 <span
                  tal:condition="python: item_sametime"
@@ -60,6 +56,7 @@
                     <tal:location content="obj/location">Location</tal:location>
                 </span>
             </span>
+        </a>
             <span class="tile" tal:define="desc obj/Description" tal:content="python:desc[:35] + '...'"></span>
     </dd>
     </tal:events>

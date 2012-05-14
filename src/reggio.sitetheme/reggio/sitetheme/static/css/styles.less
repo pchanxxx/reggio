@@ -282,11 +282,18 @@ html, body {
     padding-bottom: 1px;
 }
 
-#divide {
-    border: 3px solid #dfdfdf;
+.divide {
+    background:url(../images/divide_portlet.png) no-repeat 0px 0px transparent;
+    height: 5px;
     width: 210px;
-    margin-top: 85px;
+    margin-top: 100px;
 
+}
+.divide_bottom {
+    background:url(../images/divide_portlet.png) no-repeat 0px 0px transparent;
+    height: 5px;
+    width: 210px;
+    margin-top: 20px;    
 }
 
 .circle {
@@ -355,7 +362,27 @@ html, body {
 #sidebar-left {
     margin-left: 10px;
 }
-
+#butterfly {
+    background:url(../images/butterfly.png) no-repeat 0px 0px transparent;
+    width: 65px;
+    height: 50px;
+    margin-top: 110px;
+    margin-left: 150px;
+}
+#lines {
+    height:5px;
+    width: 950px;
+    margin-bottom: 10px;
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    margin-top: 10px;
+}
+#copyright {
+    float:left;
+    color: #d7d7d7;
+    font-size: 70%;
+    margin-top: -10px;
+}
 #navigation a {
     color: #fff;
     display: block;
@@ -526,22 +553,44 @@ dl.portletNews dd.portletFooter {
     border-bottom: 3px solid #dfdfdf;
     margin-top: 2em;
 }
+#sidebar-right dl.portlet dd.portletItem a.tile span.portletItemDetails {
+    background: url(../images/color_circle.png) no-repeat 2px 9px transparent;
+    border-bottom: 1px solid #c7c7c7;
+    padding-left: 12px;
+    margin-left: 0px;
+}
+#sidebar-right dl.portlet dd.portletItem span.tile {
+    margin-top: 10px;
+    margin-left: 15px;   
+    display: inline-block;
+}
 
+#sidebar-right dl.portlet {
+    margin-top: 35px;
+}
+#sidebar-right dl.portlet dd.portletItem a.tile span.portletItemDetails span {
+
+}
+
+#sidebar-right dl.portlet dd.portletItem {
+    font-size: 80%; 
+}
 #sidebar-right dl.portletEvents p,
 dl.portletEvents {
     margin-right: 10px;
 }
 #sidebar-right dl.portletEvents p,
 dl.portletEvents dt.portletHeader {
-    color: #e2ae1c;
+    background:url(../images/portlet_header.png) no-repeat 0px 27px transparent;
+    color: #45a12a;
     font-size: 1.8em;
     font-family: times;
-    border-bottom:1px solid #d7d7d7;    
+    font-weight: lighter;  
 } 
 
 #sidebar-right dl.portletEvents p,
 dl.portletEvents dd.portletFooter {
-    border-bottom: 3px solid #dfdfdf;
+
     margin-top: 2em;
 }
 
@@ -731,7 +780,7 @@ dl.portlet {
     padding-top: 10px;
 }
 .template-view #content #ov-block #ov-content #ov-header {
-        background: url(../images/devide.png) no-repeat 0px 40px transparent;
+        background: url(../images/devide.png) no-repeat 0px 38px transparent;
         width: 435px;
 }
 .template-view #content #ov-block #ov-content #ov-header h2 {
@@ -747,10 +796,13 @@ dl.portlet {
 
 }
 
+.template-view #content #ov-block .row{
+    background: url(../images/devide_small.png) no-repeat 0px 250px transparent;
+}
 .template-view #content #ov-block #ov-content{
-    -moz-border-image: url("../images/devide_small.png") 0 30 10 20 repeat;
+/*    -moz-border-image: url("../images/devide_small.png") 0 30 10 20 repeat;
     -webkit-border-image:url("../images/devide_small.png") 0 30 10 20 repeat;
-    border-image:url("../images/devide_small.png") 0 30 10 20 repeat;
+    border-image:url("../images/devide_small.png") 0 30 10 20 repeat; */
     margin-bottom: 30px;
    
 }
@@ -775,13 +827,13 @@ dl.portlet {
 
 #content a:link,
 dl.portlet a:link {
-    color: #205c90;
+    color: #45a12a;
  /*   border-bottom: 0.1em solid #ccc; */
 }
 
 #content a:visited,
 dl.portlet a:visited {
-    color: #e2ae1c;
+    color: #45a12a;
     border-bottom: 0.1em solid #ccc;
 }
 #content a:hover,
@@ -1993,7 +2045,7 @@ div.overlay .formControls a {
     background: url(../images/footer_logo_kg.png) no-repeat 0px 0px transparent;
     height: 150px;
     width: 200px;
-    margin-left: -40px;
+    margin-left: -20px;
     margin-top: -45px;
 }
 
@@ -2013,6 +2065,10 @@ div.overlay .formControls a {
     color: #fff;
     display: block;
     float: right;
+}
+#kontaktbar li a {
+    color: #fff;
+    padding-right: 10px;
 }
 
 
